@@ -12,6 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(45deg,#e91e63,#f1f3f4);
+    text-align: center;
 }
 
 .player {
@@ -44,10 +45,19 @@ body {
     font-size: 65px;
     color: #0066FF;
     text-shadow: yellow 1px 2px 1px;
+    flex-wrap: wrap;
 }
 
 .player audio {
     width: 100%;
     outline: none;
     background: #f1f3f4;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    .title {
+        top: 25px;
+        font-size: 45px;
+        letter-spacing: 2px;
+    }
 }
